@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cxx-to-rust-migrator"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["click>=8.1","rich>=13.7","pydantic>=2.9","orjson>=3.10","gitpython>=3.1"]
+[project.scripts]
+migrate = "migrator.cli.main:app"
