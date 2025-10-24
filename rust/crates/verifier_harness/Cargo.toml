@@ -1,0 +1,6 @@
+[package]
+name = "verifier_harness"
+version = "0.1.0"
+edition = "2021"
+[dependencies]
+pilot_lib_rs = { path = "../pilot_lib_rs" }

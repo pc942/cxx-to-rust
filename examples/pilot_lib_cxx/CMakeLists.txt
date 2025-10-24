@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(pilot_math CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_library(pilot_math src/math.cpp)
+target_include_directories(pilot_math PUBLIC include)
+add_executable(test_math tests/test_math.cpp)
+target_link_libraries(test_math PRIVATE pilot_math)

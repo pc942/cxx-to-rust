@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/pilot_lib_rs","crates/verifier_harness"]
+resolver = "2"
